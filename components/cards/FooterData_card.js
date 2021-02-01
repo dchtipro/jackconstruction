@@ -1,5 +1,6 @@
+import Image from "next/dist/client/image";
 
-const Company_card = () => {
+const Footerdata_card = () => {
 
 
     return (
@@ -7,16 +8,27 @@ const Company_card = () => {
 
 
 
-        <div className='company_card'>
+        <div className='footerdata_card'>
 
 
-            <div className='company_card_header content_bg'>
+            <div className='footerdata_card_header '>
+
+                <div className='footerdata_card_header_social'>
+
+                      <img src='/facebook.svg' alt={' icon facebook'} />
+
+              <img src='/twitter.svg' alt={' icon facebook'} />
+
+               <img src='/linkedin.svg' alt={' icon facebook'} />
+                </div>
+
+
 
 
 
 
             </div>
-            <div className='company_card_footer'>
+            <div className='footerdata_card_body'>
 
                  <div className='columns is-mobile'>
                      <div className='column company_card_footer_years is-half'>
@@ -52,4 +64,4 @@ const Company_card = () => {
     )
 }
 
-export default Company_card
+export default Footerdata_card

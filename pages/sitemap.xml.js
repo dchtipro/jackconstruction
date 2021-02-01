@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import fetch from 'isomorphic-unfetch';
+
 
 export default class SiteMap extends Component {
     static async getInitialProps({req, res}) {
