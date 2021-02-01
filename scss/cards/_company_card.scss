@@ -5,13 +5,20 @@
   width: 100%;
   height: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 85% 15%;
   grid-template-areas: "header" "footer";
 
   overflow: hidden;
 
 
+background-size: cover; background-image: url('/img/company.png');
+    background-repeat: no-repeat;
 
+ @include media-max(768px)
+  {
+    grid-template-columns: 100% !important;
+  grid-template-rows: 250px 150px !important;
+  }
 
 
   &_header {
@@ -19,7 +26,7 @@
     align-self: start;
     display: flex;
     justify-content: center;
-    max-height: 80%;
+
 
 
 
@@ -37,11 +44,14 @@
   &_footer{
 
      grid-area: footer;
+    max-height: 100%;
 
-    grid-template-columns: 50% 50% !important;
+
+
     align-self: end;
 
     &_years{
+      padding-bottom: 20px;
 
 
       display: flex;
@@ -51,9 +61,11 @@
 
 
       &_number{
-        font-weight: bolder;
-        font-size: 24px;
+
         color: white;
+         font-weight: bold;
+        font-size: 38px;
+        margin-right: 10px;
 
 
 
@@ -63,13 +75,46 @@
         font-weight: normal;
         font-size: 16px;
         color: white;
+         line-height: 1;
 
       }
     }
 
+
+  &_projects{
+     padding-bottom: 20px;
+
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       background: $dark;
+
+
+       &_number{
+
+        color: white;
+         font-weight: bold;
+        font-size: 38px;
+        margin-right: 10px;
+
+
+
+      }
+
+       &_text{
+        font-weight: normal;
+        font-size: 16px;
+        color: white;
+         line-height: 1;
+
+      }
+    }
 
 
   }
 
 
 }
+
+
