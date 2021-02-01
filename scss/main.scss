@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@import "~@fontsource/lato";
+@import "./base/mixins";
+
+$primary: #F06900;
+
+/* Bulma */
+@import "~bulma/bulma";
+
+/* Card */
+@import "cards/buildRepair";
+@import "cards/company_card";
+
+
+@import "base/common";
+@import "pages/home";

@@ -1,0 +1,75 @@
+.company_card {
+
+  background-color: #FFFFFF;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 20%;
+  grid-template-areas: "header" "footer";
+
+  overflow: hidden;
+
+
+
+
+
+  &_header {
+    grid-area: header;
+    align-self: start;
+    display: flex;
+    justify-content: center;
+    max-height: 80%;
+
+
+
+    &_img {
+      width: 100% !important;
+      height: 100% !important;
+      object-position: top;
+      object-fit: cover;
+    }
+
+
+  }
+
+
+  &_footer{
+
+     grid-area: footer;
+
+    grid-template-columns: 50% 50% !important;
+    align-self: end;
+
+    &_years{
+
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       background: $primary;
+
+
+      &_number{
+        font-weight: bolder;
+        font-size: 24px;
+        color: white;
+
+
+
+      }
+
+       &_text{
+        font-weight: normal;
+        font-size: 16px;
+        color: white;
+
+      }
+    }
+
+
+
+  }
+
+
+}
