@@ -6,6 +6,7 @@ import Remodeling_list from "../components/list/Remodeling_list";
 import Link from "next/link";
 import Blog_list from "../components/list/Blog_list";
 import Company_card from "../components/cards/Company_card";
+import Testimonials_list from "../components/list/Testimonial_list";
 
 export default function Home() {
     return (
@@ -153,16 +154,14 @@ export default function Home() {
             <section className='section has-bg-gris'>
                 <div className='container is-max-desktop'>
                     <div className='columns is-multiline is-justify-content-center'>
-                        <div className='column is-6-desktop has-text-centered'>
-                            <h2 className='title_section is-size-3 has-text-dark'>Custom Projects</h2>
+                        <div className='column is-8-desktop has-text-centered'>
+                            <h2 className='title_section is-size-3 has-text-dark'>Build & Repair</h2>
                             <div className='is-flex is-justify-content-center'>
                                 <hr className='hr_cat'/>
                             </div>
 
-                            <p className='has-text-grey is-center'>100% tailor made projects from the concept to the
-                                execuon.
-                                From remodeling
-                                to brand new construcon. At home or for your office.</p>
+                            <p className='has-text-grey is-center'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ncidunt ut
+laoreet dolore magna volutpat minim veniam, quis nostrud exerci taonut aliquip ex ea commodo</p>
                         </div>
 
                         <div className='column is-12  is-justify-content-center'>
@@ -182,7 +181,7 @@ export default function Home() {
             <section className='section '>
                 <div className='container is-max-desktop'>
                     <div className='columns is-multiline is-justify-content-center'>
-                        <div className='column is-6-desktop has-text-centered'>
+                        <div className='column is-8-desktop has-text-centered'>
                             <h2 className='title_section is-size-3 has-text-dark'>Remodeling</h2>
                             <div className='is-flex is-justify-content-center'>
                                 <hr className='hr_cat'/>
@@ -215,7 +214,7 @@ export default function Home() {
                         <div className='column is-12'>
                             <div className='p-5 pl-0 container'>
 
-                                <h2 className='title_section is-size-3 has-text-dark'>Our Experse</h2>
+                                <h2 className='title_section is-size-3 has-text-dark'>Our Expertise</h2>
                                 <hr className='hr_cat'/>
                                 <p className='has-text-grey'>100% tailor made projects from the concept to the execuon.
                                     From remodeling
@@ -225,33 +224,32 @@ export default function Home() {
                                 <div className='columns py-6 is-multiline'>
                                     <div className='column is-4 is-size-6'>
                                         <ul className="inside">
-                                            <li className=''>Design and plan</li>
-                                            <li>Licences</li>
-                                            <li>Contrucon</li>
+                                            <li className=''>Lorem ipsum</li>
+                                            <li>Lorem ipsum</li>
+                                            <li>Lorem ipsum</li>
                                         </ul>
                                     </div>
 
                                     <div className='column is-4  is-size-6'>
                                         <ul className="inside">
-                                            <li>Design and plan</li>
-                                            <li>Licences</li>
-                                            <li>Contrucon</li>
+                                            <li>Lorem ipsum</li>
+                                            <li>Lorem ipsum</li>
+                                            <li>Lorem ipsum</li>
                                         </ul>
                                     </div>
 
                                     <div className='column is-4  is-size-6'>
                                         <ul className="inside">
-                                            <li>Design and plan</li>
-                                            <li>Licences</li>
-                                            <li>Contrucon</li>
+                                            <li>Lorem ipsum</li>
+                                            <li>Lorem ipsum</li>
+                                            <li>Lorem ipsum</li>
                                         </ul>
                                     </div>
 
                                     <div className='column is-6-desktop mt-3'>
 
                                         <Link href={'/'}>
-                                            <a className="button is-primary is-fullwidth" type={'submit'}>START YOUR
-                                                PROJECT
+                                            <a className="button is-primary is-fullwidth" type={'submit'}>LOREM IPSUM
                                             </a>
                                         </Link>
                                     </div>
@@ -291,10 +289,7 @@ export default function Home() {
                                 <hr className='hr_cat'/>
                             </div>
 
-                            <p className='has-text-grey is-center'>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                elit, sed diam nonummy nibh euismod ncidunt ut
-                                laoreet dolore magna volutpat minim veniam, quis nostrud exerci taonut aliquip ex ea
-                                commodo.</p>
+
                         </div>
 
                         <div className='column is-12  is-justify-content-center'>
@@ -321,7 +316,7 @@ export default function Home() {
 
                                     <h2 className='title_section is-size-3 has-text-white'>Our Company</h2>
                                     <hr className='hr_cat'/>
-                                    <p className='has-text-grey'>Lorem ipsum dolor sit amet, consectetuer
+                                    <p className='has-text-white'>Lorem ipsum dolor sit amet, consectetuer
                                         adipiscing elit, sed diam nonummy nibh
                                         euismod ncidunt ut laoreet dolore magna
                                         volutpat minim veniam, quis nostrud exerci
@@ -330,8 +325,7 @@ export default function Home() {
                                         vulputate velit esse molese consequat, vel
                                         to brand new construcon. At home or for your office.</p>
 
-                                    <button className="button is-primary  is-fullwidth mt-5" type={'submit'}>REQUEST A
-                                        CALLBACK
+                                    <button className="button is-primary  is-fullwidth mt-5" type={'submit'}>LEARN MORE
                                     </button>
 
 
@@ -349,6 +343,75 @@ export default function Home() {
 
                     </div>
 
+                </div>
+            </section>
+
+             <section className='section '>
+                <div className='container is-max-desktop'>
+                    <div className='columns is-multiline is-justify-content-center'>
+                        <div className='column is-6-desktop has-text-centered'>
+                            <h2 className='title_section is-size-3 has-text-dark'>Client Tesmonials</h2>
+                            <div className='is-flex is-justify-content-center'>
+                                <hr className='hr_cat'/>
+                            </div>
+
+
+                        </div>
+
+                        <div className='column is-12  is-justify-content-center'>
+
+
+                            <Testimonials_list/>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+              <section className='section has-bg-gris'>
+                <div className='container is-max-desktop'>
+                    <form>
+                        <div className='columns is-multiline'>
+                            <div className='column is-12'>
+                                <h2 className='title_section has-text-dark is-size-3'>Contact Us</h2>
+                                <hr className='hr_cat'/>
+
+
+                            </div>
+
+
+                            <div className='column is-6-desktop'>
+                                <div className="control">
+                                    <input className="input" type="text" placeholder="Your Name"/>
+                                </div>
+                            </div>
+
+
+
+                            <div className='column is-6-desktop'>
+                                <div className="control">
+                                    <input className="input" type="email" placeholder="Your Email Address"/>
+                                </div>
+                            </div>
+
+                            <div className='column is-12'>
+                                <div className="control">
+                                    <textarea className="textarea" placeholder="How can we help you?"/>
+                                </div>
+                            </div>
+
+
+
+                            <div className='column is-4-desktop'>
+                                <button className="button is-primary  is-fullwidth" type={'submit'}>SEND MESSAGE
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
                 </div>
             </section>
 

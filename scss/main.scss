@@ -1,9 +1,12 @@
 @charset "utf-8";
 
-@import "~@fontsource/lato";
+
 @import "./base/mixins";
 
 $primary: #F06900;
+/* Font */
+@import "~@fontsource/lato";
+@import "../public/icofont.min.css";
 
 /* Bulma */
 @import "~bulma/bulma";
@@ -12,6 +15,7 @@ $primary: #F06900;
 @import "cards/buildRepair";
 @import "cards/company_card";
 @import "cards/footerData";
+@import "cards/testimonial_card";
 
 
 @import "base/common";

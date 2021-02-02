@@ -5,16 +5,6 @@ import Link from 'next/link'
 
 const BuildRepair_card = (props) => {
 
-    const  data = () => {
-
-        if (props.date.length > 0)
-        {
-            alert('Entro')
-            return   <p className="buildRepair_card_body_date"> {props.date}</p>
-        }
-
-
-    }
 
 
     return (

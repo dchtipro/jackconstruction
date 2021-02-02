@@ -1,0 +1,82 @@
+.testimonial_card {
+
+  background-color: #FFFFFF;
+    display: grid;
+  width: 280px;
+  height: 350px;
+  grid-template-columns: 280px;
+  grid-template-rows: 100px 250px;
+  grid-template-areas: "header" "body";
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+padding-right: 20px;
+
+
+
+  &_header {
+    grid-area: header;
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+
+
+    &_img {
+      border-radius: 50%;
+
+      border: 1px solid $primary;
+    }
+
+
+  }
+
+
+  &_body {
+    padding: 20px;
+    padding-top: 0;
+
+    grid-area: body;
+    align-self: center;
+
+    &_name {
+
+      font-size: 18px;
+      font-weight: bolder;
+      color: $dark;
+      text-align: center;
+
+
+    }
+
+
+    &_text {
+      color: $grey;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5; /* number of lines to show */
+      -webkit-box-orient: vertical;
+
+      margin-top: 10px;
+      font-size: 14px;
+
+    }
+
+    &_starts{
+      padding-top: 20px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+
+    }
+
+
+  }
+
+
+}

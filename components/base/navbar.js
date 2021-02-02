@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className="navbar-brand">
                 <Link href="/">
                     <a className="navbar-item">
-                        <img src="/img/logo.png" width="150" height="64" alt={'logo'}/>
+                        <img src="/img/logo.svg" width="150" height="64" alt={'logo'}/>
                     </a>
                 </Link>
 
@@ -22,7 +22,7 @@ const Navbar = () => {
             <div id="navbarBasicExample" className="navbar-menu">
                 <div className="navbar-end">
                     <Link href="/">
-                        <a className="navbar-item is-uppercase is-active has-text-weight-medium">
+                        <a className="navbar-item is-uppercase is-active">
                             Home
                         </a>
                     </Link>

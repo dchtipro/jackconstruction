@@ -9,8 +9,8 @@ body{
 a.navbar-item.is-active{
 
   color: $primary;
-   border-bottom: 2px solid $primary;
-  border-bottom-width: medium ;
+  border-bottom-color: $primary !important;
+
 
 }
 
@@ -27,9 +27,17 @@ a.navbar-item:focus{
 
 a.navbar-item{
   font-weight: bold;
-   border-bottom: 2px solid transparent;
+
   font-size: 14px;
-  margin-bottom: 5px;
+  margin: 15px;
+  line-height: 2;
+
+  padding: 0 !important;
+  padding-bottom: 15px;
+  border-bottom-width: 3.1px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  width: fit-content;
 
 }
 

@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="py-3">
             <div className="columns is-multiline">
                 <div className='column is-12 section'>
-                    <div className="navbar is-justify-content-space-around container">
+                    <div className="navbar is-justify-content-space-between container">
                         <Link href="/">
                             <a className="navbar-item is-uppercase is-active has-text-weight-medium">
                                 Home
@@ -79,7 +79,7 @@ const Footer = () => {
                     <div className='px-6 '>
                         <Link href="/">
                             <a className="">
-                                <img src="/img/logo_black.png" width="200" height="80" alt={'logo'}/>
+                                <img src="/img/logo_white.svg" width="200" height="80" alt={'logo'}/>
                             </a>
                         </Link>
 
@@ -87,25 +87,25 @@ const Footer = () => {
 
                         <div className='is-flex is-flex-direction-column '>
                                <Link href="/">
-                            <a className="is-uppercase has-text-white pt-2">
+                            <a className="is-uppercase  pt-2 has-text-link-light">
                                CONDICIONES GENERALES DE VENTA
                             </a>
                         </Link>
 
                          <Link href="/">
-                            <a className="is-uppercase has-text-white pt-2">
+                            <a className="is-uppercase has-text-link-light pt-2 " >
                                 AVISO LEGAL
                             </a>
                         </Link>
 
                          <Link href="/">
-                            <a className="is-uppercase has-text-white pt-2">
+                            <a className="is-uppercase has-text-link-light pt-2">
                                 POLÍTICA DE COOKIES
                             </a>
                         </Link>
 
                          <Link href="/">
-                            <a className="is-uppercase has-text-white pt-2">
+                            <a className="is-uppercase has-text-link-light pt-2">
                                 ES · EN
                             </a>
                         </Link>
@@ -118,7 +118,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='column is-6-desktop pt-0 pl-0'>
+                <div className='column is-6-desktop pt-0 pl-0  pr-0'>
                     <Footerdata_card/>
                 </div>
 
