@@ -12,7 +12,7 @@ export default function Layout({children}) {
                       content="width=device-width, initial-scale=1"/>
                  <meta property="og:title"
                       content="Jack Construction"
-                      key="cuba"/>
+                      key="Miami"/>
 
                 <meta name="title"
                       content="Jack Construction"/>
