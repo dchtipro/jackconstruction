@@ -8,7 +8,7 @@ import Blog_list from "../components/list/Blog_list";
 import Company_card from "../components/cards/Company_card";
 import Testimonials_list from "../components/list/Testimonial_list";
 import {useState, useEffect} from 'react';
-import {main_url} from 'lib/api'
+import {main_url} from '../lib/api'
 
 export default function Home() {
 
@@ -22,7 +22,6 @@ export default function Home() {
 
                 $delete.addEventListener('click', (e) => {
                      e.preventDefault()
-                    alert('entro a eliminar')
 
                     $notification.parentNode.removeChild($notification);
                        console.log($notification)
@@ -33,11 +32,12 @@ export default function Home() {
 
 
     const sendEmail = async event => {
+        const url = main_url+ "hello";
         event.preventDefault();
         event.target.querySelector('#btn_frm_contact').classList.toggle('is-loading');
 
         const res = await fetch(
-            main_url,
+            url,
             {
                 body: JSON.stringify({
                     name: event.target.name.value,
