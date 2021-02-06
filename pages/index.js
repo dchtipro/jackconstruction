@@ -7,7 +7,8 @@ import Link from "next/link";
 import Blog_list from "../components/list/Blog_list";
 import Company_card from "../components/cards/Company_card";
 import Testimonials_list from "../components/list/Testimonial_list";
-import {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react';
+import {main_url} from 'lib/api'
 
 export default function Home() {
 
@@ -36,7 +37,7 @@ export default function Home() {
         event.target.querySelector('#btn_frm_contact').classList.toggle('is-loading');
 
         const res = await fetch(
-            'http://127.0.0.1:3000/api/hello',
+            main_url,
             {
                 body: JSON.stringify({
                     name: event.target.name.value,
