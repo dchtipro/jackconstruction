@@ -7,8 +7,65 @@ import Link from "next/link";
 import Blog_list from "../components/list/Blog_list";
 import Company_card from "../components/cards/Company_card";
 import Testimonials_list from "../components/list/Testimonial_list";
+import {useState, useEffect} from 'react'
 
 export default function Home() {
+
+    const [nameu, setName] = useState('andy')
+
+    useEffect(() => {
+
+
+            (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+                const $notification = $delete.parentNode;
+
+                $delete.addEventListener('click', (e) => {
+                     e.preventDefault()
+                    alert('entro a eliminar')
+
+                    $notification.parentNode.removeChild($notification);
+                       console.log($notification)
+                });
+            });
+    });
+
+
+
+    const sendEmail = async event => {
+        event.preventDefault();
+        event.target.querySelector('#btn_frm_contact').classList.toggle('is-loading');
+
+        const res = await fetch(
+            'http://127.0.0.1:3000/api/hello',
+            {
+                body: JSON.stringify({
+                    name: event.target.name.value,
+                    address: event.target.address.value,
+                    email: event.target.email.value,
+                    desc: event.target.desc.value
+                }),
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                method: 'POST'
+            }
+        )
+
+        const result = await res.json()
+
+        if (result) {
+            event.target.querySelector('.notification').classList.remove('is-hidden');
+            event.target.name.value = "";
+            event.target.address.value = "";
+            event.target.email.value = "";
+            event.target.desc.value = "";
+
+            event.target.querySelector('#btn_frm_contact').classList.toggle('is-loading');
+        }
+
+
+    }
+
     return (
         <Layout>
             <div className='section p-0'>
@@ -37,7 +94,7 @@ export default function Home() {
 
             <section className='section has-bg-dark'>
                 <div className='container is-max-desktop'>
-                    <form>
+                    <form onSubmit={sendEmail}>
                         <div className='columns is-multiline'>
                             <div className='column is-12'>
                                 <h2 className='title_section has-text-white is-size-3'>Get a Free Quote!</h2>
@@ -50,25 +107,26 @@ export default function Home() {
 
                             <div className='column is-4-desktop'>
                                 <div className="control">
-                                    <input className="input" type="text" placeholder="Your Name"/>
+                                    <input className="input" type="text" placeholder="Your Name" id={'name'}/>
                                 </div>
                             </div>
 
                             <div className='column is-4-desktop '>
                                 <div className="control">
-                                    <input className="input" type="text" placeholder="Your Address"/>
+                                    <input className="input" type="text" placeholder="Your Address" id={'address'}/>
                                 </div>
                             </div>
 
                             <div className='column is-4-desktop'>
                                 <div className="control">
-                                    <input className="input" type="email" placeholder="Your Email Address"/>
+                                    <input className="input" type="email" placeholder="Your Email Address"
+                                           id={'email'}/>
                                 </div>
                             </div>
 
                             <div className='column is-12'>
                                 <div className="control">
-                                    <textarea className="textarea" placeholder="How can we help you?"/>
+                                    <textarea className="textarea" placeholder="How can we help you?" id={'desc'}/>
                                 </div>
                             </div>
 
@@ -77,8 +135,16 @@ export default function Home() {
                             </div>
 
                             <div className='column is-4-desktop'>
-                                <button className="button is-primary  is-fullwidth" type={'submit'}>REQUEST A CALLBACK
+                                <button className="button is-primary  is-fullwidth" id={'btn_frm_contact'} >REQUEST A
+                                    CALLBACK
                                 </button>
+                            </div>
+
+                            <div className='column is-12'>
+                                <div className="notification is-danger is-light is-hidden">
+                                    <button className="delete"></button>
+                                    Se envío el correo correctamente.
+                                </div>
                             </div>
 
                         </div>
@@ -160,8 +226,10 @@ export default function Home() {
                                 <hr className='hr_cat'/>
                             </div>
 
-                            <p className='has-text-grey is-center'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ncidunt ut
-laoreet dolore magna volutpat minim veniam, quis nostrud exerci taonut aliquip ex ea commodo</p>
+                            <p className='has-text-grey is-center'>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                elit, sed diam nonummy nibh euismod ncidunt ut
+                                laoreet dolore magna volutpat minim veniam, quis nostrud exerci taonut aliquip ex ea
+                                commodo</p>
                         </div>
 
                         <div className='column is-12  is-justify-content-center'>
@@ -339,14 +407,14 @@ laoreet dolore magna volutpat minim veniam, quis nostrud exerci taonut aliquip e
                     </div>
 
                     <div className='column is-8-desktop p-0 '>
-                       <Company_card/>
+                        <Company_card/>
 
                     </div>
 
                 </div>
             </section>
 
-             <section className='section '>
+            <section className='section '>
                 <div className='container is-max-desktop'>
                     <div className='columns is-multiline is-justify-content-center'>
                         <div className='column is-6-desktop has-text-centered'>
@@ -371,7 +439,7 @@ laoreet dolore magna volutpat minim veniam, quis nostrud exerci taonut aliquip e
                 </div>
             </section>
 
-              <section className='section has-bg-gris'>
+            <section className='section has-bg-gris'>
                 <div className='container is-max-desktop'>
                     <form>
                         <div className='columns is-multiline'>
@@ -390,7 +458,6 @@ laoreet dolore magna volutpat minim veniam, quis nostrud exerci taonut aliquip e
                             </div>
 
 
-
                             <div className='column is-6-desktop'>
                                 <div className="control">
                                     <input className="input" type="email" placeholder="Your Email Address"/>
@@ -402,7 +469,6 @@ laoreet dolore magna volutpat minim veniam, quis nostrud exerci taonut aliquip e
                                     <textarea className="textarea" placeholder="How can we help you?"/>
                                 </div>
                             </div>
-
 
 
                             <div className='column is-4-desktop'>
