@@ -25,7 +25,7 @@ export default (req, res) => {
     const mailOptions = {
         from: `${email}`,
         to: 'andova86@gmail.com, apons1986@yahoo.com',
-        subject: `New mail from jack`,
+        subject: `Envio de Contacto con Jack Construction`,
         html:
             `
         
@@ -400,7 +400,7 @@ export default (req, res) => {
                                         <div class="txtTinyMce-wrapper"
                                              style="line-height: 1.2; font-size: 12px; color: #555555; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 14px;">
                                             <p style="font-size: 16px; line-height: 1.2; word-break: break-word; mso-line-height-alt: 19px; margin: 0;">
-                                                <span style="font-size: 16px;text-decoration: underline; text-align: left"><strong>Datos de contactos</strong></span>
+                                                <span style="font-size: 16px;text-decoration: underline;  text-align: left";><strong>Datos de contacto</strong></span>
                                             </p>
                                         </div>
                                     </div>
@@ -449,7 +449,7 @@ export default (req, res) => {
                                         <div class="txtTinyMce-wrapper"
                                              style="line-height: 1.2; font-size: 12px; color: #555555; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 14px;">
                                             <p style="font-size: 14px; line-height: 1.2; word-break: break-word; mso-line-height-alt: 17px; margin: 0;">
-                                                Nombre:</p>
+                                                <strong>Nombre:</strong></p>
                                         </div>
                                     </div>
                                     <!--[if mso]></td></tr></table><![endif]-->
@@ -481,7 +481,7 @@ export default (req, res) => {
                                     <div style="color:#555555;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
                                         <div class="txtTinyMce-wrapper"
                                              style="line-height: 1.2; font-size: 12px; color: #555555; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 14px;">
-                                            <p style="line-height: 1.2; word-break: break-word; mso-line-height-alt: 14px; margin: 0;">
+                                            <p style="line-height: 1.2; word-break: break-word; mso-line-height-alt: 16px; margin: 0;">
                                                ${name}</p>
                                         </div>
                                     </div>
@@ -530,7 +530,7 @@ export default (req, res) => {
                                         <div class="txtTinyMce-wrapper"
                                              style="line-height: 1.2; font-size: 12px; color: #555555; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 14px;">
                                             <p style="font-size: 14px; line-height: 1.2; word-break: break-word; mso-line-height-alt: 17px; margin: 0;">
-                                                Direccion:</p>
+                                                <strong>Direccion:</strong></p>
                                         </div>
                                     </div>
                                     <!--[if mso]></td></tr></table><![endif]-->
@@ -611,7 +611,7 @@ export default (req, res) => {
                                         <div class="txtTinyMce-wrapper"
                                              style="line-height: 1.2; font-size: 12px; color: #555555; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 14px;">
                                             <p style="font-size: 14px; line-height: 1.2; word-break: break-word; mso-line-height-alt: 17px; margin: 0;">
-                                                Comentario:</p>
+                                                <strong>Comentario:</strong></p>
                                         </div>
                                     </div>
                                     <!--[if mso]></td></tr></table><![endif]-->
@@ -698,25 +698,25 @@ export default (req, res) => {
                                                     <tr align="center"
                                                         style="vertical-align: top; display: inline-block; text-align: center;"
                                                         valign="top">
-                                                        <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 2.5px; padding-left: 2.5px;"
+                                                        <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 10px; padding-left: 10px;"
                                                             valign="top"><a href="https://www.facebook.com/"
                                                                             target="_blank"><img alt="Facebook"
                                                                                                  height="32"
                                                                                                  src="https://jackconstruction.vercel.app/img/fb-w.svg"
-                                                                                                 style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;"
+                                                                                                 style="text-decoration: none; -ms-interpolation-mode: bicubic;  border: 0; display: block;"
                                                                                                  title="Facebook"
                                                                                                  width="32"/></a></td>
-                                                        <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 2.5px; padding-left: 2.5px;"
+                                                        <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 10px; padding-left: 10px;"
                                                             valign="top"><a href="https://twitter.com/" target="_blank"><img
                                                                 alt="Twitter" height="32" src="https://jackconstruction.vercel.app/img/twitter-w.svg"
-                                                                style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;"
+                                                                style="text-decoration: none; -ms-interpolation-mode: bicubic;  border: 0; display: block;"
                                                                 title="Twitter" width="32"/></a></td>
-                                                        <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 2.5px; padding-left: 2.5px;"
+                                                        <td style="word-break: break-word; vertical-align: top; padding-bottom: 0; padding-right: 10px; padding-left: 10px;"
                                                             valign="top"><a href="https://www.linkedin.com/"
                                                                             target="_blank"><img alt="LinkedIn"
                                                                                                  height="32"
                                                                                                  src="https://jackconstruction.vercel.app/img/linkedin-48.png"
-                                                                                                 style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; display: block;"
+                                                                                                 style="text-decoration: none; -ms-interpolation-mode: bicubic; border: 0; display: block;"
                                                                                                  title="LinkedIn"
                                                                                                  width="32"/></a></td>
                                                     </tr>

@@ -34,6 +34,9 @@ export default function Home() {
     const sendEmail = async event => {
         const url = main_url+ "hello";
         event.preventDefault();
+
+
+
         event.target.querySelector('#btn_frm_contact').classList.toggle('is-loading');
 
         const res = await fetch(
@@ -55,13 +58,21 @@ export default function Home() {
         const result = await res.json()
 
         if (result) {
-            event.target.querySelector('.notification').classList.remove('is-hidden');
+
+
+            const not = event.target.querySelector('.notification')
+                if(not)
+                {
+                     not.classList.toggle('is-hidden');
             event.target.name.value = "";
             event.target.address.value = "";
             event.target.email.value = "";
             event.target.desc.value = "";
 
             event.target.querySelector('#btn_frm_contact').classList.toggle('is-loading');
+
+                }
+
         }
 
 
@@ -108,7 +119,7 @@ export default function Home() {
 
                             <div className='column is-4-desktop'>
                                 <div className="control">
-                                    <input className="input" type="text" placeholder="Your Name" id={'name'}/>
+                                    <input className="input" type="text" placeholder="Your Name" id={'name'} required/>
                                 </div>
                             </div>
 
@@ -120,7 +131,7 @@ export default function Home() {
 
                             <div className='column is-4-desktop'>
                                 <div className="control">
-                                    <input className="input" type="email" placeholder="Your Email Address"
+                                    <input className="input" type="email" placeholder="Your Email Address" required
                                            id={'email'}/>
                                 </div>
                             </div>
@@ -142,9 +153,9 @@ export default function Home() {
                             </div>
 
                             <div className='column is-12'>
-                                <div className="notification is-danger is-light is-hidden">
+                                <div className="notification is-success is-light is-hidden">
                                     <button className="delete"></button>
-                                    Se envío el correo correctamente.
+                                    Se ha enviado el correo correctamente. Gracias por contactarnos.
                                 </div>
                             </div>
 
@@ -454,7 +465,7 @@ export default function Home() {
 
                             <div className='column is-6-desktop'>
                                 <div className="control">
-                                    <input className="input" type="text" placeholder="Your Name"/>
+                                    <input className="input" type="text" placeholder="Your Name" required/>
                                 </div>
                             </div>
 
@@ -467,7 +478,7 @@ export default function Home() {
 
                             <div className='column is-12'>
                                 <div className="control">
-                                    <textarea className="textarea" placeholder="How can we help you?"/>
+                                    <textarea className="textarea" placeholder="How can we help you?" required/>
                                 </div>
                             </div>
 
