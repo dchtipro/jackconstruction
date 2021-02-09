@@ -80,6 +80,7 @@ export default function Home() {
 
     return (
         <Layout>
+
             <div className='section p-0'>
 
                 <div className='columns'>

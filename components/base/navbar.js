@@ -1,17 +1,27 @@
 import Link from "next/link";
+import ActiveLink from './ActiveLink'
 
 const Navbar = () => {
     return (
-        <nav className="navbar container" role="navigation" aria-label="main navigation">
+        <nav className="navbar container"
+             role="navigation"
+             aria-label="main navigation">
             <div className="navbar-brand">
+
                 <Link href="/">
                     <a className="navbar-item">
-                        <img src="/img/logo.svg" width="150" height="64" alt={'logo'}/>
+                        <img src="/img/logo.svg"
+                             width="150"
+                             height="64"
+                             alt={'logo'}/>
                     </a>
                 </Link>
 
 
-                <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false"
+                <a role="button"
+                   className="navbar-burger"
+                   aria-label="menu"
+                   aria-expanded="false"
                    data-target="navbarBasicExample">
                     <span aria-hidden="true"/>
                     <span aria-hidden="true"/>
@@ -19,49 +29,51 @@ const Navbar = () => {
                 </a>
             </div>
 
-            <div id="navbarBasicExample" className="navbar-menu">
+            <div id="navbarBasicExample"
+                 className="navbar-menu">
                 <div className="navbar-end">
-                    <Link href="/">
-                        <a className="navbar-item is-uppercase is-active">
+
+
+                    <ActiveLink href="/"
+                                activeClassName="is-active">
+                        <a className="navbar-item is-uppercase ">
                             Home
                         </a>
-                    </Link>
+                    </ActiveLink>
+                    <ActiveLink href="/custom_projects"  activeClassName="is-active">
+                        <a className="navbar-item is-uppercase">
+                            CUSTOM PROJECTS </a>
+                    </ActiveLink>
 
-
-                    <Link href="/">
+                    <Link href="/" activeClassName="is-active">
                         <a className="navbar-item is-uppercase">
                             BUILD & REPAIR </a>
                     </Link>
 
-                     <Link href="/">
-                        <a className="navbar-item is-uppercase">
-                            CUSTOM PROJECTS </a>
-                    </Link>
 
-
-                     <Link href="/">
+                    <Link href="/" activeClassName="is-active">
                         <a className="navbar-item is-uppercase">
                             REMODELING </a>
                     </Link>
 
-                     <Link href="/">
+                    <Link href="/" activeClassName="is-active">
                         <a className="navbar-item is-uppercase">
-                           OUR EXPERTISE </a>
+                            OUR EXPERTISE </a>
                     </Link>
 
-                    <Link href="/">
+                    <Link href="/" activeClassName="is-active">
                         <a className="navbar-item is-uppercase">
-                           COMPANY </a>
+                            COMPANY </a>
                     </Link>
 
-                    <Link href="/">
+                    <Link href="/" activeClassName="is-active">
                         <a className="navbar-item is-uppercase">
-                           BLOG </a>
+                            BLOG </a>
                     </Link>
 
-                     <Link href="/">
+                    <Link href="/" activeClassName="is-active">
                         <a className="navbar-item is-uppercase">
-                           CONTACT US </a>
+                            CONTACT US </a>
                     </Link>
 
                     <div className="navbar-item has-dropdown is-hoverable is-hidden">
