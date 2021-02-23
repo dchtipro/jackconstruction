@@ -27,12 +27,27 @@
 }
 
 .title_section{
-
-  font-weight: bold;
+ font-style: normal;
+  font-weight: 900;
 
 }
+
 .inside {
   list-style-position: inside;
   list-style-type: square;
 }
+
+.tabs-with-content .tabs:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.tabs-with-content .tab-content {
+  padding: 1rem;
+  display: none;
+}
+
+.tabs-with-content .tab-content.is-active {
+  display: block;
+}
+
 

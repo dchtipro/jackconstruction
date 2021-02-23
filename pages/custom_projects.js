@@ -1,6 +1,8 @@
 import Layout from "../components/base/layout";
 import Project_card from "../components/cards/project_card";
 import {useEffect} from "react";
+import BuildRepair_list from "../components/list/BuildRepair_list";
+import LatestProject_list from "../components/list/LatestProject_list";
 
 
 const about = () => {
@@ -52,9 +54,9 @@ const about = () => {
             <section className='section has-bg-dark'>
                 <div className='container is-max-desktop'>
 
-                    <div className='columns is-multiline'>
-                        <div className='column is-12'>
-                            <h2 className='title_section has-text-white is-size-3'>We Build The Entire Building From 0!</h2>
+                    <div className='columns is-multiline is-justify-content-flex-start'>
+                        <div className='column is-10-desktop'>
+                            <h2 className='title_section has-text-white is-size-2-desktop'>We Build The Entire Building From 0!</h2>
                             <hr className='hr_cat'/>
                             <p className='has-text-white'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
 
@@ -67,7 +69,7 @@ const about = () => {
                 <div className='container is-max-desktop'>
                     <div className='columns is-multiline is-justify-content-center'>
                         <div className='column is-8-desktop has-text-centered'>
-                            <h2 className='title_section is-size-3 has-text-dark'>Custom Projects</h2>
+                            <h2 className='title_section is-size-3 has-text-dark is-bold'>Custom Projects</h2>
                             <div className='is-flex is-justify-content-center'>
                                 <hr className='hr_cat'/>
                             </div>
@@ -82,11 +84,11 @@ const about = () => {
                 <div className='container'>
                     <div className='columns is-multiline is-justify-content-center'>
 
-                        <div className='column is-12  is-justify-content-center mt-6'>
+                        <div className='column is-12  is-justify-content-center mt-6 tabs-with-content'>
 
 
                             <div className="tabs  is-fullwidth">
-                                <ul className="inside">
+                                <ul className="inside has-bullet-separator">
                                     <li><a>All Projects</a></li>
                                     <li><a>Design and plan</a></li>
                                     <li><a>Licences</a></li>
@@ -97,7 +99,7 @@ const about = () => {
                             </div>
 
                             <div>
-                                <section className="tab-content">
+                                <section className="tab-content is-active">
 
                                     <div className='project_card_list '>
 
@@ -126,9 +128,11 @@ const about = () => {
                                     </div>
 
                                 </section>
-                                <section className="tab-content">Music content</section>
-                                <section className="tab-content">Videos content</section>
-                                <section className="tab-content">Documents content</section>
+                                <section className="tab-content ">Design and Plan</section>
+                                <section className="tab-content">License</section>
+                                <section className="tab-content">Construction</section>
+                                <section className="tab-content">Project management</section>
+                                <section className="tab-content">Maintence</section>
                             </div>
 
 
@@ -136,6 +140,36 @@ const about = () => {
                     </div>
                 </div>
             </section>
+
+
+            <section className='section has-bg-gris'>
+                <div className='container is-max-desktop'>
+                    <div className='columns is-multiline is-justify-content-center'>
+                        <div className='column is-8-desktop has-text-centered'>
+                            <h2 className='title_section is-size-3 has-text-dark'>Latest Projects</h2>
+                            <div className='is-flex is-justify-content-center'>
+                                <hr className='hr_cat'/>
+                            </div>
+
+                            <p className='has-text-grey is-center'>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                elit, sed diam nonummy nibh euismod ncidunt ut
+                                laoreet dolore magna volutpat minim veniam, quis nostrud exerci taonut aliquip ex ea
+                                commodo</p>
+                        </div>
+
+                        <div className='column is-12  is-justify-content-center'>
+
+
+                            <LatestProject_list/>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
 
 
         </Layout>

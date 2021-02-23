@@ -75,3 +75,28 @@ a.navbar-item{
   max-height: 100%;
 
 }
+
+.tabs.is-fullwidth li.is-active a{
+  color: #F06900 !important;
+  border-bottom-color: #F06900;
+  border-bottom-style: solid;
+  width: fit-content;
+  border-bottom-width: 3.1px;
+
+}
+
+.tabs ul{
+  border-bottom-color: transparent;
+}
+
+.tabs li {
+  text-align: center !important;
+}
+
+.tabs ul li a{
+   border-bottom-color: transparent;
+}
+
+.tabs ul li a:hover{
+   border-bottom-color: transparent;
+}
